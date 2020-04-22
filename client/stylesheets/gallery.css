@@ -31,6 +31,7 @@ body {
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: repeat(2, 100px);
+  height: 283px;
 }
 
 .c {
@@ -52,7 +53,7 @@ input {
 }
 
 #lead-photo {
-  width: 200px;
+  width: 175px;
   margin: auto;
   padding: 1em;
   border-radius: 50px;

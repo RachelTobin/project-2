@@ -3,7 +3,7 @@
 let controller = function(){
 
 
-    console.log("test");
+    //console.log("test");
     let prefixURL = "http://api.flickr.com/services/feeds/photos_public.gne?tags=";
     let suffixURL = "&format=json&jsoncallback=?";
     //get value entered by user from textbox
@@ -11,7 +11,8 @@ let controller = function(){
     let requestURL = prefixURL + flickrTag + suffixURL;
 
     //clear old photos
-    $(".photos").val("");
+    //$(".photos").value("");
+    $(".photos").html("");
 
   $.getJSON(requestURL, function(flickrResponse) {
     flickrResponse.items.forEach(function(item, index) {
@@ -41,4 +42,4 @@ window.addEventListener("load", function(){
   document.querySelector("button").addEventListener("click", controller);
 });
 
-$(document).ready(controller);
+//$(document).ready(controller);
