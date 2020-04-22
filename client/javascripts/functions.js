@@ -43,3 +43,17 @@ let revWords2 = s => {
   });
   return output.join(" ");
 };
+
+
+
+//Req. 3c
+let revWords3 = s => {
+  let reversedStr = "";
+  let output = [];
+  reversedStr = s.split(" ");
+  for (let element of reversedStr) {
+    let w = element.split("").reverse().join("");
+    output.push(w);
+  }
+  return output.join(" ");
+};
