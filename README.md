@@ -2,6 +2,6 @@
 
 Repo start-state:
 
-1. README.md
+1. README.md changes
 2. .gitignore
 3. gallery.html, gallery.css, gallery.js
