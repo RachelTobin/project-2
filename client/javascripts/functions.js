@@ -14,3 +14,19 @@ let containsDuplicates = s => {
   }
   return false;
 };
+
+//Req. 3a
+let revWords1 = s => {
+  let reversedStr = "";
+  let output = [];
+  reversedStr = s.split(" ");
+  //return reversedStr;
+  for (let i in reversedStr) {
+
+    let w = reversedStr[i].split("").reverse().join("");
+
+    output.push(w);
+
+  }
+  return output.join(" ");
+};
