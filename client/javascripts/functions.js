@@ -1,6 +1,6 @@
 // jshint esversion: 6
 
-let containsDuplicates = s => {
+let old = s => {
   let cArr = [0, 0, 0, 0],
     code;
   for (let i in cArr) {
@@ -56,4 +56,22 @@ let revWords3 = s => {
     output.push(w);
   }
   return output.join(" ");
+};
+
+
+
+//Extra Credit!
+let containsDuplicates = s => {
+  let arr = s.split("");
+  for (let i in arr) {
+    let test = s.charCodeAt(i);
+    let skip = i;
+    for (let j in arr){
+      if (test == s.charCodeAt(j) && (j != skip)) {
+        console.log("match");
+        return true;
+      }
+    }
+  }
+  return false;
 };
