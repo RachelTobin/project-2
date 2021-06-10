@@ -9,3 +9,5 @@ accessed using the HTTP protocol.
 understand how the API works and what it returns.
 5. Some web APIs are public, and others require an access key.
 Flickr offers several public APIs.
+
+### [Link back to Rachel Tobin's Github User Page](https://racheltobin.github.io)
